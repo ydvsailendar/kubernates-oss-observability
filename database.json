@@ -1,0 +1,26 @@
+{
+    "dev": {
+        "host": "localhost",
+        "user": "root",
+        "password" : "toor",
+        "database": "nodeapp",
+        "driver": "mysql",
+        "multipleStatements": true
+    },
+    "test": {
+    	"host": "localhost",
+        "user": "root",
+        "password" : "xxxx",
+        "database": "nodeapp",
+        "driver": "mysql",
+        "multipleStatements": true
+    },
+    "prod": {
+    	"host": "localhost",
+        "user": "root",
+        "password" : "xxxx",
+        "database": "nodeapp",
+        "driver": "mysql",
+        "multipleStatements": true
+    }
+}

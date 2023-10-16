@@ -1,0 +1,29 @@
+{
+  "name": "vnrapp",
+  "version": "1.0.0",
+  "description": "VNR VJIET Internal Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "VNR",
+    "app"
+  ],
+  "author": "Anvesh Samineni, VNR Students Team, Murali Mohan S",
+  "license": "ISC",
+  "dependencies": {
+    "app": "^0.1.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.2.2",
+    "mssql": "^4.1.0",
+    "mysql": "^2.15.0",
+    "path": "^0.12.7",
+    "routes": "^2.1.0"
+  }
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Student Details</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="form-validation.css" rel="stylesheet"> -->
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container student-data">
+      <div class="py-5 text-center">
+      </div>
+
+      <div class="row">
+        
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Student Details</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Id</label>
+                <input type="text" class="form-control" id="id" placeholder="" value="" disabled>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Registration Number</label>
+                <input type="text" class="form-control" id="reg_num" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid registration number is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Date of Birth</label>
+                <input type="date" class="form-control" id="dob">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="country">Department</label>
+                <select class="custom-select d-block w-100" id="department" required>
+                  <option value="">Choose...</option>
+                  <option>Information Technology</option>
+                  <option>Computer Science</option>
+                  <option>Electronics</option>
+                  <option>Mechanical</option>
+                </select>
+              </div>
+            </div>
+
+            
+            <hr class="mb-4">
+            <a href="#" class="btn btn-primary my-2" id="createData">Create</a>
+            <a href="#" class="btn btn-secondary my-2" id="readData">Read</a>
+            <a href="#" class="btn btn-warning my-2" id="updateData">Update</a>
+          </form>
+        </div>
+      </div>
+
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2018 VNR VJIET</p>
+
+      </footer>
+    </div>
+
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/vnrapp/template.js"></script>
+  </body>
+</html>
